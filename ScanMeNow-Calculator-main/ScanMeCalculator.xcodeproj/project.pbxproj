@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		612170A129D2A7DB00D92889 /* InputResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612170A029D2A7DB00D92889 /* InputResult.swift */; };
+		612170A529D2A8EC00D92889 /* ScanMeCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 612170A329D2A8EC00D92889 /* ScanMeCalculator.xcdatamodeld */; };
+		612170A829D2A96200D92889 /* InputResultCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612170A629D2A96200D92889 /* InputResultCoreData+CoreDataClass.swift */; };
+		612170A929D2A96200D92889 /* InputResultCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612170A729D2A96200D92889 /* InputResultCoreData+CoreDataProperties.swift */; };
+		612170AB29D2A9A500D92889 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612170AA29D2A9A500D92889 /* CoreDataManager.swift */; };
+		612170B329D2C90A00D92889 /* InputResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612170B129D2C90A00D92889 /* InputResultCell.swift */; };
+		612170B429D2C90A00D92889 /* InputResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612170B229D2C90A00D92889 /* InputResultCell.xib */; };
+		612170B729D2E36600D92889 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 612170B629D2E36600D92889 /* CryptoSwift */; };
+		612170BA29D2E7A100D92889 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612170B929D2E7A100D92889 /* Extension+String.swift */; };
+		61C94A5029D1621B0006AD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C94A4F29D1621B0006AD58 /* AppDelegate.swift */; };
+		61C94A5229D1621B0006AD58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C94A5129D1621B0006AD58 /* SceneDelegate.swift */; };
+		61C94A5929D1621C0006AD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C94A5829D1621C0006AD58 /* Assets.xcassets */; };
+		61C94A5C29D1621C0006AD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C94A5A29D1621C0006AD58 /* LaunchScreen.storyboard */; };
+		61C94A6729D163040006AD58 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C94A6529D163040006AD58 /* HomepageViewController.swift */; };
+		61C94A6829D163040006AD58 /* HomepageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C94A6629D163040006AD58 /* HomepageViewController.xib */; };
+		61C94A6B29D16C4C0006AD58 /* FLEX in Frameworks */ = {isa = PBXBuildFile; productRef = 61C94A6A29D16C4C0006AD58 /* FLEX */; };
+		61C94A7329D18A310006AD58 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C94A7229D18A310006AD58 /* HomepageViewModel.swift */; };
+		61C94A7C29D1BCAC0006AD58 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C94A7B29D1BCAC0006AD58 /* Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		612170A029D2A7DB00D92889 /* InputResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputResult.swift; sourceTree = "<group>"; };
+		612170A429D2A8EC00D92889 /* ScanMeCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScanMeCalculator.xcdatamodel; sourceTree = "<group>"; };
+		612170A629D2A96200D92889 /* InputResultCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputResultCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		612170A729D2A96200D92889 /* InputResultCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputResultCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		612170AA29D2A9A500D92889 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		612170B129D2C90A00D92889 /* InputResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputResultCell.swift; sourceTree = "<group>"; };
+		612170B229D2C90A00D92889 /* InputResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputResultCell.xib; sourceTree = "<group>"; };
+		612170B929D2E7A100D92889 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		61C94A4C29D1621B0006AD58 /* ScanMeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C94A4F29D1621B0006AD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C94A5129D1621B0006AD58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61C94A5829D1621C0006AD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61C94A5B29D1621C0006AD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61C94A5D29D1621C0006AD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C94A6529D163040006AD58 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		61C94A6629D163040006AD58 /* HomepageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomepageViewController.xib; sourceTree = "<group>"; };
+		61C94A7229D18A310006AD58 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
+		61C94A7B29D1BCAC0006AD58 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C94A4929D1621B0006AD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C94A6B29D16C4C0006AD58 /* FLEX in Frameworks */,
+				612170B729D2E36600D92889 /* CryptoSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6121709F29D2A7BE00D92889 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				612170A029D2A7DB00D92889 /* InputResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		612170A229D2A8AA00D92889 /* CoreData Manager */ = {
+			isa = PBXGroup;
+			children = (
+				612170A629D2A96200D92889 /* InputResultCoreData+CoreDataClass.swift */,
+				612170A729D2A96200D92889 /* InputResultCoreData+CoreDataProperties.swift */,
+				612170A329D2A8EC00D92889 /* ScanMeCalculator.xcdatamodeld */,
+				612170AA29D2A9A500D92889 /* CoreDataManager.swift */,
+			);
+			path = "CoreData Manager";
+			sourceTree = "<group>";
+		};
+		612170AC29D2C8CE00D92889 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				612170B129D2C90A00D92889 /* InputResultCell.swift */,
+				612170B229D2C90A00D92889 /* InputResultCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		612170B829D2E79600D92889 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				612170B929D2E7A100D92889 /* Extension+String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		61C94A4329D1621B0006AD58 = {
+			isa = PBXGroup;
+			children = (
+				61C94A4E29D1621B0006AD58 /* ScanMeCalculator */,
+				61C94A4D29D1621B0006AD58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C94A4D29D1621B0006AD58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C94A4C29D1621B0006AD58 /* ScanMeCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C94A4E29D1621B0006AD58 /* ScanMeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				61C94A6429D162CD0006AD58 /* Core */,
+				61C94A6329D162BF0006AD58 /* Homepage */,
+				61C94A5D29D1621C0006AD58 /* Info.plist */,
+			);
+			path = ScanMeCalculator;
+			sourceTree = "<group>";
+		};
+		61C94A6329D162BF0006AD58 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				6121709F29D2A7BE00D92889 /* Model */,
+				61C94A7129D189CE0006AD58 /* ViewModel */,
+				61C94A7029D189CA0006AD58 /* View */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		61C94A6429D162CD0006AD58 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				612170B829D2E79600D92889 /* Extension */,
+				612170A229D2A8AA00D92889 /* CoreData Manager */,
+				61C94A4F29D1621B0006AD58 /* AppDelegate.swift */,
+				61C94A5129D1621B0006AD58 /* SceneDelegate.swift */,
+				61C94A7B29D1BCAC0006AD58 /* Alert.swift */,
+				61C94A5829D1621C0006AD58 /* Assets.xcassets */,
+				61C94A5A29D1621C0006AD58 /* LaunchScreen.storyboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		61C94A7029D189CA0006AD58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				612170AC29D2C8CE00D92889 /* Cell */,
+				61C94A6529D163040006AD58 /* HomepageViewController.swift */,
+				61C94A6629D163040006AD58 /* HomepageViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61C94A7129D189CE0006AD58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				61C94A7229D18A310006AD58 /* HomepageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C94A4B29D1621B0006AD58 /* ScanMeCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C94A6029D1621C0006AD58 /* Build configuration list for PBXNativeTarget "ScanMeCalculator" */;
+			buildPhases = (
+				61C94A4829D1621B0006AD58 /* Sources */,
+				61C94A4929D1621B0006AD58 /* Frameworks */,
+				61C94A4A29D1621B0006AD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanMeCalculator;
+			packageProductDependencies = (
+				61C94A6A29D16C4C0006AD58 /* FLEX */,
+				612170B629D2E36600D92889 /* CryptoSwift */,
+			);
+			productName = ScanMeCalculator;
+			productReference = 61C94A4C29D1621B0006AD58 /* ScanMeCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C94A4429D1621B0006AD58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					61C94A4B29D1621B0006AD58 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 61C94A4729D1621B0006AD58 /* Build configuration list for PBXProject "ScanMeCalculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61C94A4329D1621B0006AD58;
+			packageReferences = (
+				61C94A6929D16C4C0006AD58 /* XCRemoteSwiftPackageReference "FLEX" */,
+				612170B529D2E36600D92889 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 61C94A4D29D1621B0006AD58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C94A4B29D1621B0006AD58 /* ScanMeCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C94A4A29D1621B0006AD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612170B429D2C90A00D92889 /* InputResultCell.xib in Resources */,
+				61C94A5C29D1621C0006AD58 /* LaunchScreen.storyboard in Resources */,
+				61C94A6829D163040006AD58 /* HomepageViewController.xib in Resources */,
+				61C94A5929D1621C0006AD58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C94A4829D1621B0006AD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612170B329D2C90A00D92889 /* InputResultCell.swift in Sources */,
+				612170A829D2A96200D92889 /* InputResultCoreData+CoreDataClass.swift in Sources */,
+				61C94A7329D18A310006AD58 /* HomepageViewModel.swift in Sources */,
+				61C94A5029D1621B0006AD58 /* AppDelegate.swift in Sources */,
+				612170A929D2A96200D92889 /* InputResultCoreData+CoreDataProperties.swift in Sources */,
+				612170A529D2A8EC00D92889 /* ScanMeCalculator.xcdatamodeld in Sources */,
+				61C94A5229D1621B0006AD58 /* SceneDelegate.swift in Sources */,
+				612170A129D2A7DB00D92889 /* InputResult.swift in Sources */,
+				612170BA29D2E7A100D92889 /* Extension+String.swift in Sources */,
+				61C94A7C29D1BCAC0006AD58 /* Alert.swift in Sources */,
+				612170AB29D2A9A500D92889 /* CoreDataManager.swift in Sources */,
+				61C94A6729D163040006AD58 /* HomepageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61C94A5A29D1621C0006AD58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C94A5B29D1621C0006AD58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C94A5E29D1621C0006AD58 /* GreenBuiltInCamera */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GreenBuiltInCamera;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = GreenBuiltInCamera;
+		};
+		61C94A5F29D1621C0006AD58 /* GreenCameraRoll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GreenCameraRoll;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = GreenCameraRoll;
+		};
+		61C94A6129D1621C0006AD58 /* GreenBuiltInCamera */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33Z87RYAC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanMeCalculator/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Give me access to the camera to calculate the number";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zein.ScanMeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = GreenBuiltInCamera;
+		};
+		61C94A6229D1621C0006AD58 /* GreenCameraRoll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33Z87RYAC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanMeCalculator/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Give me access to the camera to calculate the number";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zein.ScanMeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = GreenCameraRoll;
+		};
+		61C94A6C29D175800006AD58 /* RedBuiltInCamera */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RedBuiltInCamera;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = RedBuiltInCamera;
+		};
+		61C94A6D29D175800006AD58 /* RedBuiltInCamera */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33Z87RYAC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanMeCalculator/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Give me access to the camera to calculate the number";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zein.ScanMeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = RedBuiltInCamera;
+		};
+		61C94A6E29D1758C0006AD58 /* RedCameraRoll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RedCameraRoll;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = RedCameraRoll;
+		};
+		61C94A6F29D1758C0006AD58 /* RedCameraRoll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33Z87RYAC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanMeCalculator/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Give me access to the camera to calculate the number";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zein.ScanMeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = RedCameraRoll;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C94A4729D1621B0006AD58 /* Build configuration list for PBXProject "ScanMeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C94A5E29D1621C0006AD58 /* GreenBuiltInCamera */,
+				61C94A6C29D175800006AD58 /* RedBuiltInCamera */,
+				61C94A6E29D1758C0006AD58 /* RedCameraRoll */,
+				61C94A5F29D1621C0006AD58 /* GreenCameraRoll */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = GreenCameraRoll;
+		};
+		61C94A6029D1621C0006AD58 /* Build configuration list for PBXNativeTarget "ScanMeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C94A6129D1621C0006AD58 /* GreenBuiltInCamera */,
+				61C94A6D29D175800006AD58 /* RedBuiltInCamera */,
+				61C94A6F29D1758C0006AD58 /* RedCameraRoll */,
+				61C94A6229D1621C0006AD58 /* GreenCameraRoll */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = GreenCameraRoll;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		612170B529D2E36600D92889 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		61C94A6929D16C4C0006AD58 /* XCRemoteSwiftPackageReference "FLEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FLEXTool/FLEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		612170B629D2E36600D92889 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 612170B529D2E36600D92889 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		61C94A6A29D16C4C0006AD58 /* FLEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61C94A6929D16C4C0006AD58 /* XCRemoteSwiftPackageReference "FLEX" */;
+			productName = FLEX;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		612170A329D2A8EC00D92889 /* ScanMeCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				612170A429D2A8EC00D92889 /* ScanMeCalculator.xcdatamodel */,
+			);
+			currentVersion = 612170A429D2A8EC00D92889 /* ScanMeCalculator.xcdatamodel */;
+			path = ScanMeCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 61C94A4429D1621B0006AD58 /* Project object */;
+}
